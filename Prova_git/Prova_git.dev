@@ -1,7 +1,7 @@
 [Project]
 filename = Prova_git.dev
 name = Prova_git
-UnitCount = 2
+UnitCount = 3
 Type = 1
 Ver = 3
 Includes = 
@@ -9,7 +9,7 @@ Libs =
 Bins = 
 ResourceIncludes = 
 MakeIncludes = 
-PrivateResource = 
+PrivateResource = Prova_git_private.rc
 Compiler = 
 CppCompiler = 
 Linker = 
@@ -44,6 +44,7 @@ UseUTF8 = 1
 
 
 [Unit1]
+FileName = Turini.h
 FileName = salatti.h
 CompileCpp = 0
 Folder = Headers
@@ -77,6 +78,19 @@ SyncProduct = 1
 
 
 [Unit2]
+FileName = salatti.h
+CompileCpp = 0
+Folder = Headers
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
+
+
+[Unit3]
 FileName = main.cpp
 CompileCpp = 1
 Folder = Sources
@@ -86,7 +100,7 @@ Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = ASCII
+RealEncoding = UTF-8
 
 
 [CompilerSettings]
@@ -99,3 +113,4 @@ cc_opt_error_implicit_int = on
 cc_opt_error_return_type = on
 cc_opt_error_vla = on
 link_cmd_opt_stack_size = 12
+
