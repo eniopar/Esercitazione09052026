@@ -1,0 +1,38 @@
+# Project: Prova_git
+# Makefile created by Red Panda C++ 3.4.3279
+
+CXX      = "g++.exe"
+CC       = "gcc.exe"
+WINDRES  = "windres.exe"
+RM       = del /q /f
+CD       = cd /d
+LIBS     = "-Wl,--stack,12582912"
+INCS     = 
+CXXINCS  = 
+CXXFLAGS = $(CXXINCS) "-g3" "-fno-ms-extensions" "-pipe" "-Wall" "-Werror=return-type" "-Werror=vla" "-D_DEBUG"
+CFLAGS   = $(INCS) "-g3" "-fno-ms-extensions" "-pipe" "-Wall" "-Werror=implicit-int" "-Werror=return-type" "-Werror=vla" "-D_DEBUG"
+NASM_FLAGS   =  "-f" "elf64" "-g"
+WINDRESFLAGS = 
+RES      = Prova_git_private.res
+OBJ      = main.o $(RES)
+BIN      = Prova_git.exe
+LINKOBJ  = "main.o" "Prova_git_private.res"
+CLEANOBJ = "main.o" "Prova_git_private.res" "Prova_git.exe"
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) >NUL 2>&1
+
+Prova_git.exe: $(OBJ)
+
+	$(CXX) $(LINKOBJ) -o "Prova_git.exe" $(LIBS)
+
+main.o: main.cpp salatti.h
+	$(CXX) -c "main.cpp" -o "main.o" $(CXXFLAGS) 
+
+Prova_git_private.res: Prova_git_private.rc 
+	$(WINDRES) -i "Prova_git_private.rc" --input-format=rc -o "Prova_git_private.res" -O coff $(WINDRESFLAGS) 
+

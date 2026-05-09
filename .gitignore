@@ -1,4 +1,8 @@
-# Prerequisites
+*_private.h
+*_private.rc
+*_private.res
+
+# Prerequisites	
 *.d
 
 # Compiled Object files
