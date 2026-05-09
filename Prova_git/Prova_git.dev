@@ -56,18 +56,6 @@ FileEncoding = PROJECT
 RealEncoding = ASCII
 
 
-[CompilerSettings]
-cc_cmd_opt_debug_info = on
-cc_cmd_opt_no_ms_extensions = on
-cc_cmd_opt_std = 
-cc_cmd_opt_use_pipe = on
-cc_cmd_opt_warning_all = on
-cc_opt_error_implicit_int = on
-cc_opt_error_return_type = on
-cc_opt_error_vla = on
-link_cmd_opt_stack_size = 12
-
-
 [VersionInfo]
 Major = 1
 Minor = 0
@@ -86,3 +74,15 @@ ProductName =
 ProductVersion = 
 AutoIncBuildNr = 0
 SyncProduct = 1
+
+
+[CompilerSettings]
+cc_cmd_opt_debug_info = on
+cc_cmd_opt_no_ms_extensions = on
+cc_cmd_opt_std = 
+cc_cmd_opt_use_pipe = on
+cc_cmd_opt_warning_all = on
+cc_opt_error_implicit_int = on
+cc_opt_error_return_type = on
+cc_opt_error_vla = on
+link_cmd_opt_stack_size = 12
