@@ -1,7 +1,16 @@
 [
     {
-        "caretX": 1,
-        "caretY": 3,
+        "caretX": 18,
+        "caretY": 5,
+        "filename": "C:/Users/aula51/Downloads/Repo2/Esercitazione09052026/Prova_git/salatti.h",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 2,
+        "caretY": 9,
         "filename": "C:/Users/aula51/Downloads/Repo2/Esercitazione09052026/Prova_git/main.cpp",
         "focused": true,
         "isOpen": true,
